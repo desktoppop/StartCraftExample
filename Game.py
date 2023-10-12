@@ -1,14 +1,14 @@
 # Игра Shmup - 4 часть
 # Графика
 import pygame
-import random 
+import random
 from os import path
 
 img_dir = path.join(path.dirname(__file__), 'img')
 
 WIDTH = 480
 HEIGHT = 600
-FPS = 1
+FPS = 30
 
 # Задаем цвета
 WHITE = (255, 255, 255)
@@ -19,7 +19,7 @@ BLUE = (0, 0, 255)
 YELLOW = (255, 255, 0)
 
 # Создаем игру и окно
-pygame.init() 
+pygame.init()
 pygame.mixer.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Введение в IT 2й курс!")
